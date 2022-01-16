@@ -1,0 +1,24 @@
+<!-- Small modal -->
+							<button class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+							<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-sm">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+											<h4 class="modal-title" id="mySmallModalLabel">Login Incorreto</h4>
+										</div>
+										<div class="modal-body">
+											<p>Opsss! você nos informou um Login incorreto, verifique sua senha e nome de usuário. Se ainda não é cadastrado, cadastre-se em nossa plataforma!</p>
+											
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-sm btn-dark" data-dismiss="modal">Tente Novamente</button>
+											<button type="button" class="btn btn-sm btn-default">Cadastre-se</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- main end -->

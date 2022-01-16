@@ -1,0 +1,82 @@
+
+					niveis
+
+
+
+
+			 if ($_SESSION['nivel']=''){
+						header('Location:index.php');//redireciona para a parte que o usuario esta logado 
+                        }
+                        if ($_SESSION['nivel']='2'){
+						header('Location:admpage.php');//redireciona para a parte que o usuario esta logado 
+                        }
+                        if ($$_SESSION['nivel']='1'){ 
+						header('Location:admpageadmin.php');//redireciona para a parte que o usuario esta logado 
+                        }
+
+		
+
+
+					insert
+
+insert into clientes(codigo_cliente,nivel,usuario,senha,nome,sobrenome,telefone,celular,email,endereco,cidade,info)value(1,'leandro','lele',
+'lelele','leandro','caixet','lelel','lelele','leandro@caixeta','rua estela marane esmecelato','mococa','foda-se');	
+
+
+
+conexão banco
+
+					<!-- <?php
+//realiza a conexao com o banco de dados 
+error_reporting (E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
+$servidor = "localhost";
+$usuario = "root";
+$senha = ""; 
+$conn = mysql_connect($servidor, $usuario, $senha);
+
+if (!$conn) {
+    die("Falha na conexão: " . mysql_connect_error());
+}
+
+mysql_select_db('buyfood',$conn);
+//inicia uma nova sesao.
+@session_start();
+?>
+
+-->
+
+conexão servidor
+
+
+<!-- <?php
+//realiza a conexao com o banco de dados 
+error_reporting (E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
+$servidor = "mysql.hostinger.com.br";
+$usuario = "u460529085_root";
+$senha = "120899"; 
+$conn = mysql_connect($servidor, $usuario, $senha);
+
+if (!$conn) {
+    die("Falha na conexão: " . mysql_connect_error());
+}
+
+mysql_select_db('u460529085_buy',$conn);
+//inicia uma nova sesao.
+@session_start();
+?>
+
+-->
+
+
+
+create table pedidos (
+codigo int key,
+datap varchar(50),
+descrisao varchar(300),
+pagamento varchar(100),
+entrega varchar(100),
+valor int ,
+estabelecimento varchar(100),
+info varchar(100));
+
+SELECT * FROM pedidos p;
